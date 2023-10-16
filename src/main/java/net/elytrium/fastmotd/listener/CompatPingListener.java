@@ -32,11 +32,11 @@ public class CompatPingListener {
 
   @Subscribe
   public void onPing(ProxyPingEvent event) {
-    InboundConnection connection = event.getConnection();
+    /*InboundConnection connection = event.getConnection();
     event.setPing(this.plugin.getNextCompat(
         connection.getProtocolVersion(),
         connection.getVirtualHost()
             .map(address -> address.getHostName() + ":" + address.getPort())
             .orElse(null)));
-  }
+  }*/
 }
